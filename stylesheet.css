@@ -746,3 +746,115 @@ input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white i
     }
     .jagged a {margin: 2vw;}
 }
+
+.history {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem
+}
+
+.history:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    background-color: #cfd1d7;
+    left: 50%;
+    width: 2px;
+    -webkit-transform: translateX(-1px);
+    transform: translateX(-1px);
+    content: ""
+}
+
+.history-entry {
+    position: relative;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+.history-entry h4 {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto
+}
+
+.history-entry h5 {
+    font-size: .875rem;
+    font-weight: 400
+}
+
+.history-entry:nth-child(odd) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    padding-left: 3rem
+}
+
+.history-entry:nth-child(2n) {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding-right: 3rem;
+    text-align: right
+}
+
+.history-entry .dot-double {
+    position: absolute;
+    top: 0;
+    background-color: #cfd1d7;
+    top: 50%
+}
+
+.history-entry:nth-child(odd) .dot-double {
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.history-entry:nth-child(2n) .dot-double {
+    right: 0;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%)
+}
+
+.history-entry:first-child .dot-double {
+    background-color: #1f1f1f
+}
+
+.history-entry:first-child .dot-double:after {
+    background-color: #EF5728
+}
+
+.dot {
+    width: .5rem;
+    height: .5rem;
+    margin-right: .25rem
+}
+
+.dot,
+.dot-double {
+    display: inline-block;
+    border-radius: 9999px
+}
+
+.dot-double {
+    position: relative;
+    width: 54px;
+    height: 54px
+}
+
+.dot-double:after {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 9999px;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    content: ""
+}
