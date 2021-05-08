@@ -302,6 +302,7 @@ Portrait Section
     text-align: center;
     margin: 10px auto;
     color: #EF5728;
+    font-size: 3rem;
 }
 #idoit *{
     color: #5e727c;
@@ -419,6 +420,12 @@ footer a:hover {
 #resume {
     font-size: 1.5em;
     background-color: #FCF8F3;
+}
+#resume h1 {
+    text-align: center;
+    font-size:3rem;
+    margin: 10px auto;
+    color: #EF5728;
 }
 .res-section {
     width: 100%; 
@@ -725,6 +732,7 @@ input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white i
         overflow: hidden;
         width: 0;
     }
+
     .leftgal .project:hover img{
         -webkit-transform: translate(10%, 0);
         -ms-transform: translate(10%, 0);
@@ -879,7 +887,8 @@ input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white i
 
 .history-entry h4 {
     -webkit-font-smoothing: auto;
-    -moz-osx-font-smoothing: auto
+    -moz-osx-font-smoothing: auto;
+    font-size: 1.4rem;
 }
 
 .history-entry h5 {
@@ -902,7 +911,7 @@ input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white i
 
 .history-entry .dot-double {
     position: absolute;
-    top: 0;
+    top: 140px;
     background-color: #cfd1d7;
     top: 50%
 }
@@ -954,4 +963,10 @@ input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white i
     right: 18px;
     bottom: 18px;
     content: ""
+}
+.text-front {
+    color: #1f1f1f
+}
+.text-sm {
+    font-size: 1rem
 }
