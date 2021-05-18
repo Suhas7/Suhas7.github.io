@@ -680,6 +680,7 @@ input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white i
     #big-zoom .contents div {
         width: 40%;
         padding: 1em;
+        justify-content: center;
     }
     /* IDOIT Section */
     .threecol {
