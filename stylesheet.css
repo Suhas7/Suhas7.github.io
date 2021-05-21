@@ -426,7 +426,9 @@ footer a:hover {
     font-size:3rem;
     margin: 10px auto;
     color: #EF5728;
+    margin-top: 1em;
 }
+
 .res-section {
     width: 100%; 
     display: flex;
@@ -694,7 +696,7 @@ input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white i
     /* ############
       RESUME PAGE 
     ############ */
-    #resume .contents {margin: 3em auto;}
+    #resume .contents {margin: 1em auto;}
     .res-section {flex-flow: row nowrap; margin-bottom: 1em;}
     .res-title {width: 40%; margin-top: 0;}
     .res-items {width: 60%;}
@@ -882,19 +884,24 @@ input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white i
 .history-entry {
     position: relative;
     width: 50%;
-    padding-top: 1rem;
-    padding-bottom: 1rem
+
 }
 
 .history-entry h4 {
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
     font-size: 1.4rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: .3em;
 }
 
 .history-entry h5 {
     font-size: .875rem;
-    font-weight: 400
+    font-weight: 400;
+    margin-top: 0em;
 }
 
 .history-entry:nth-child(odd) {
@@ -915,6 +922,7 @@ input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white i
     top: 140px;
     background-color: #cfd1d7;
     top: 50%
+
 }
 
 .history-entry:nth-child(odd) .dot-double {
@@ -931,6 +939,7 @@ input:-webkit-autofill {border:1px solid; -webkit-box-shadow: 0 0 0 30px white i
 
 .history-entry:first-child .dot-double {
     background-color: #1f1f1f
+
 }
 
 .history-entry:first-child .dot-double:after {
